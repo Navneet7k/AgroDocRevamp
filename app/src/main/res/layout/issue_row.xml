@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/rectangle_curved"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:text="issue date"
+            android:id="@+id/issue_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="issue sample 1"
+        android:id="@+id/issue_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="issue sample 1"
+        android:id="@+id/issue_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="issue sample 1"
+        android:id="@+id/issue_symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--<Button-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:id="@+id/delete_issue"-->
+        <!--android:text="delete"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/click_overlay"
+        android:alpha="0.5"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/cancel_bt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cancel_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

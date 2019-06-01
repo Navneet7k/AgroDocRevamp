@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <RelativeLayout
+       android:id="@+id/issue_layout"
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+   <LinearLayout
+       android:gravity="center"
+       android:orientation="vertical"
+       android:id="@+id/add_layout"
+       android:layout_width="100dp"
+       android:layout_height="match_parent">
+      <ImageView
+          android:padding="10dp"
+          android:src="@drawable/plus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_margin="10dp"
+       android:layout_toRightOf="@+id/add_layout"
+       android:id="@+id/issue_list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+   </RelativeLayout>
+   <RelativeLayout
+       android:background="@color/colorBackground"
+       android:padding="5dp"
+       android:id="@+id/img_layout"
+       android:layout_below="@+id/issue_layout"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+      <LinearLayout
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="@drawable/bg_curved_grey_3"
+          android:id="@+id/add_img"
+          android:layout_width="120dp"
+          android:layout_height="match_parent">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            <ImageButton
+                android:background="@null"
+                android:id="@+id/run"
+                android:visibility="gone"
+                android:src="@drawable/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:background="@null"
+                android:id="@+id/edit_img"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/wrench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+         </RelativeLayout>
+
+      <ImageView
+          android:id="@+id/extra_img"
+          android:layout_gravity="center"
+          android:src="@drawable/plus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      </LinearLayout>
+   <ImageView
+       android:layout_toRightOf="@+id/add_img"
+       android:padding="10dp"
+       android:scaleType="fitXY"
+       android:id="@+id/issue_image"
+       android:layout_width="120dp"
+       android:layout_height="match_parent" />
+   </RelativeLayout>
+   <android.support.v7.widget.RecyclerView
+       android:layout_below="@+id/img_layout"
+       android:id="@+id/timeline_rec"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:listitem="@layout/item_timeline_line_padding"/>
+
+</RelativeLayout>

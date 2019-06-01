@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AgroDocRevamp</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="issuename_lable">Issue Name :</string>
+    <string name="issuedetails_label">Issue Details :</string>
+    <string name="issuesym_label">Issue Symptoms :</string>
+</resources>

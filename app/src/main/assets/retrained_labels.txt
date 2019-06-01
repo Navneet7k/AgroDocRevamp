@@ -1,0 +1,38 @@
+tomato early blight
+potato late blight
+tomato bacterial spot
+tomato leaf mold
+tomato yellow leaf curl virus
+potato healthy
+apple healthy
+grape leaf blight
+cherry powdery mildew
+squash powdery mildew
+tomato mosaic virus
+apple scab
+tomato target spot
+corn northern leaf blight
+orange huanglongbing
+corn healthy
+strawberry healthy
+tomato healthy
+tomato late blight
+grape healthy
+raspberry healthy
+apple black rot
+grape black measles
+tomato septoria leaf spot
+peach bacterial spot
+peach healthy
+blueberry healthy
+tomato two spotted spider mite
+bell pepper bacterial spot
+apple cedar rust
+strawberry leaf scorch
+corn gray leaf spot
+grape black rot
+corn common rust
+cherry healthy
+bell pepper healthy
+soybean healthy
+potato early blight

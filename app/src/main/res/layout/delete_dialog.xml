@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_curved_grey_3"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+    <!--android:layout_gravity="end"-->
+    <!--android:src="@drawable/cancel_bt"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:text="DELETE TEST CASE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/sub_title"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="#484848"
+            android:textStyle="bold"
+            android:text="Are you sure you want to delete the test case ?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="4dp"
+            android:text="CANCEL"
+            android:background="@drawable/bg_curved_color_green"
+            android:id="@+id/cancel_button"
+            android:textColor="@color/pureWhite"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="4dp"
+            android:text="OK"
+            android:background="@drawable/bg_curved_color_green"
+            android:id="@+id/ok_button"
+            android:textColor="@color/pureWhite"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
