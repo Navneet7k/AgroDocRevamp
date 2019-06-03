@@ -70,6 +70,12 @@ PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                 timelineInterface.onScanClicked();
             }
         });
+        holder.control_measure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                timelineInterface.onControlMeasures(timeLineModel.getMessage());
+            }
+        });
     }
 
     @Override
@@ -79,7 +85,7 @@ PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView title,status;
+        private TextView title,status,control_measure;
         private TimelineView mTimelineView;
 
         public ViewHolder(View view, int viewType) {
@@ -89,6 +95,7 @@ PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             mTimelineView.initLine(viewType);
             title = (TextView) view.findViewById(R.id.text_timeline_title);
             status = (TextView)view.findViewById(R.id.text_timeline_date);
+            control_measure = (TextView)view.findViewById(R.id.control_measure);
         }
     }
 }

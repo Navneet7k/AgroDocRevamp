@@ -10,4 +10,15 @@
     <string name="issuename_lable">Issue Name :</string>
     <string name="issuedetails_label">Issue Details :</string>
     <string name="issuesym_label">Issue Symptoms :</string>
+    <string name="control_steps_fungal">Irrigating black pepper vines during summer months has been found to substantially reduce the disease symptoms. \n\n
+                                 Adequate shade regulation is a must for managing this disease.Remove and destroy all fallen leaves and spikes \n\n
+                                 Spray 1 %Bordeaux mixture or 0.2 % copper oxy chloride (50WP Blitox, Blue copper, Killex copper,etc) or 0.1% carbendazim 50 % WP (Bavistin, Zoom,JK Stein, Benfil,etc) or a formulation containing carbendazim + mancozeb (Carbendazim 12WP+ Mancozeb 63 WP eg Saaf, Companion, etc)) before emergence of flowers (late June- early July) and then at berry formation stage (late August).
+    </string>
+    <string name="control_steps_bacterial">Use disease free planting materials for raising nursery. \n\n
+                                 Collect and destroy all severely affected and defoliated leaves. \n\n
+                                 As prophylactic measure, spray 1% Bordeaux mixture, twice at 3-4 weeks interval. \n\n
+                                 If severe, spray 500 ppm streptomycin sulphate or chloramphenicol (500mg/L) at 2-3 weeks interval.
+    </string>
+    <string name="control_steps_redrust">In severe cases, spray 1% Bordeaux mixture, twice at 3-4 weeks interval. \n\n</string>
+    <string name="control_steps_lichen">In severe cases, spray 1% Bordeaux mixture. \n\n</string>
 </resources>

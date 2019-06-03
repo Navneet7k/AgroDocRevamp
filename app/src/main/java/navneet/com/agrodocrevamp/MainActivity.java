@@ -38,6 +38,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -316,10 +317,54 @@ public class MainActivity extends AppCompatActivity implements onDeleteIssue,Tim
 
     }
 
+    public void measuresView(String diseaseName) {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(this);
+        View resetDialog = getLayoutInflater().inflate(R.layout.measures_dialog, null);
+
+        TextView title = (TextView) resetDialog.findViewById(R.id.title);
+        TextView steps = (TextView) resetDialog.findViewById(R.id.steps);
+        Button ok = (Button) resetDialog.findViewById(R.id.ok_button);
+        Button cancel=(Button)resetDialog.findViewById(R.id.cancel_button);
+
+        title.setText("CONTROL MEASURES : "+diseaseName);
+
+        if (diseaseName.startsWith("pepper red rust")) {
+            steps.setText(getString(R.string.control_steps_redrust));
+        } else if (diseaseName.startsWith("pepper lichen")) {
+            steps.setText(getString(R.string.control_steps_lichen));
+        } else if (diseaseName.equals("pepper bacterial spot")) {
+            steps.setText(getString(R.string.control_steps_bacterial));
+        } else if (diseaseName.startsWith("pepper fungal pollu")) {
+            steps.setText(getString(R.string.control_steps_fungal));
+        } else {
+            steps.setText("Sorry, try again!");
+        }
+
+
+        mBuilder.setView(resetDialog);
+        final AlertDialog alertDialog = mBuilder.create();
+        alertDialog.show();
+
+
+        ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.dismiss();
+            }
+        });
+
+
+    }
+
     @Override
     public void onScanClicked() {
         Intent intent=new Intent(MainActivity.this,CameraActivity.class);
         startActivityForResult(intent, 2);
+    }
+
+    @Override
+    public void onControlMeasures(String diseaseName) {
+        measuresView(diseaseName);
     }
 
     @Override
@@ -368,11 +413,17 @@ public class MainActivity extends AppCompatActivity implements onDeleteIssue,Tim
                             findViewById(R.id.extra_img).post(new Runnable() {
                                 @Override
                                 public void run() {
-                                    extra_image.setImageURI(selectedImageUri);
+//                                    extra_image.setImageURI(selectedImageUri);
                                     run_bt.setVisibility(View.VISIBLE);
                                     image_edit.setVisibility(View.VISIBLE);
-                                    Bitmap bm=((BitmapDrawable)extra_image.getDrawable()).getBitmap();
+                                    Bitmap bm= null;
+                                    try {
+                                        bm = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImageUri);
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
                                     bm=getResizedBitmap(bm,224);
+                                    extra_image.setImageBitmap(bm);
                                     try {
                                        String sample=new ImageClassifier(MainActivity.this).classifyFrame(bm);
                                        Toast.makeText(MainActivity.this,sample,Toast.LENGTH_SHORT).show();
@@ -381,7 +432,10 @@ public class MainActivity extends AppCompatActivity implements onDeleteIssue,Tim
                                     }
                                     InputStream iStream = null;
                                     try {
-                                        iStream = getContentResolver().openInputStream(selectedImageUri);
+                                        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                                        bm.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                                        iStream = new ByteArrayInputStream(baos.toByteArray());
+//                                        iStream = getContentResolver().openInputStream(selectedImageUri);
                                         byte[] inputData = getBytes(iStream);
                                         issue_model.setExtraImage(inputData);
                                         mWordViewModel.update(issue_model);

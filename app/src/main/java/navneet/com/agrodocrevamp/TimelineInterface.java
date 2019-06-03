@@ -5,4 +5,5 @@ package navneet.com.agrodocrevamp;
  */
 public interface TimelineInterface {
     void onScanClicked();
+    void onControlMeasures(String diseaseName);
 }
