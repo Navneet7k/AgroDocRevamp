@@ -1,4 +1,7 @@
 # AgroDocRevamp
+
+![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/androidDevChallenge.png?raw=true "Title")
+
 AgroDoc is an Android Application that would allow farmers to treat their plant diseases in a series of steps which are predefined in our system.
 We are using Tensorflow library(Machine Learning library) to detect plant disease. The farmers can use their smartphone to scan a particular plant 
 leaf which they suspect for having a plant disease. We have generated custom re trained tensorflow models using the possible plant diseases. Here we 
