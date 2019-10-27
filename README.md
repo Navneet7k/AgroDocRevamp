@@ -1,4 +1,4 @@
-# AgroDocRevamp
+# AgroDoc App
 
 ![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/androidDevChallenge.png?raw=true "Title")
 
@@ -8,9 +8,20 @@ leaf which they suspect for having a plant disease. We have generated custom re 
 are retraining a mobilenet_0.50 model. The model is pre trained with common classifications, but on top of it we are training it with various leaf diseases. 
 We then analyse the plant diseases, symptoms etc and then generate proper measures to improve plant health.
 
-Use Case : 
+# Use Case : 
+
 The leaf of a particular plant/tree may differ in certain characteristics based on geographical conditions. Even within the same geographical conditions 
 the leaves of a particular plant/tree may differ in characteristics like patterns and all. So if we try to match a leaf image sample with two or three 
 samples which we have pre saved, we may not yield accurate results. This is because even same plant's leaves on different geographical conditions can show 
 different patterns. So we need to have a model that has similar geographical conditions as this farmer. Training a model with a large number of image samples 
 within this geographical condition  will definitely increase the accuracy of plant disease detection.
+
+# App Screens/Flow :
+
+![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.42.40%20PM.png?raw=true "Title")
+
+![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.43.53%20PM.png?raw=true "Title")
+
+![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.44.19%20PM.png?raw=true "Title")
+
+![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.44.39%20PM.png?raw=true "Title")
