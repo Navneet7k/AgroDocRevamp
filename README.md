@@ -30,6 +30,7 @@ within this geographical condition  will definitely increase the accuracy of pla
 
 Stackoverflow :https://stackoverflow.com/users/8009433/navneet-krishna?tab=profile
 Blog : https://www.freshbytelabs.com/
+
 Hi, I'm Navneet from Kochi,India. I love solving common problems that are out there. I also love hackathons and other coding events. The AgroDoc app is one of my projects in which i had been spending most of my time recently. I have also won 2nd runners up position for AgroDoc App in RapidValue Hackathon, please see here >> https://www.rapidvaluesolutions.com/event/coders-innovate-for-the-digital-future-hackathon19/
 
 ![Alt text](https://www.rapidvaluesolutions.com/wp-content/uploads/2019/07/Untitled-1-1.png?raw=true "Title")
