@@ -16,6 +16,10 @@ samples which we have pre saved, we may not yield accurate results. This is beca
 different patterns. So we need to have a model that has similar geographical conditions as this farmer. Training a model with a large number of image samples 
 within this geographical condition  will definitely increase the accuracy of plant disease detection.
 
+# Google's Help :
+
+For this project, we will need huge datasets to build a model that is trustworthy. So the only way to do that will be to ask for contributions in the form of datasets/code. It is almost impractical to build such a model without a community help. I would like to get google's help in getting this project noticeable
+
 # App Screens/Flow :
 
 ![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.42.40%20PM.png?raw=true "Title")
