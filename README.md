@@ -22,11 +22,11 @@ For this project, we will need huge datasets to build a model that is trustworth
 
 # Project Timeline :
 
-December 25, 2020 - UX/UI, set of all functionalities to be incorporated are finalised
-January 25,2020   - Collecting sample datasets and training a model to be used for offline operations are done 
-February 1, 2020  - testing and deploying the tensorflow lite model in the app (offline model).
-February 8, 2020  - incorporating firebase mlkit for working in online conditions
-February 20, 2020 - finalised the setup for training the dataset in cloud and further setup to be done for the process are carried out
+December 25, 2020 - UX/UI, set of all functionalities to be incorporated are finalised<br/>
+January 25,2020   - Collecting sample datasets and training a model to be used for offline operations are done<br/> 
+February 1, 2020  - testing and deploying the tensorflow lite model in the app (offline model).<br/>
+February 8, 2020  - incorporating firebase mlkit for working in online conditions<br/>
+February 20, 2020 - finalised the setup for training the dataset in cloud and further setup to be done for the process are carried out<br/>
 March 20, 2020    - formalised a way to collect the user scanned data and train them using the cloud training process
 
 # App Screens/Flow :
