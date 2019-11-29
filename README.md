@@ -20,6 +20,15 @@ within this geographical condition  will definitely increase the accuracy of pla
 
 For this project, we will need huge datasets to build a model that is trustworthy. So the only way to do that will be to ask for contributions in the form of datasets/code. It is almost impractical to build such a model without a community help. I would like to get google's help in getting this project noticeable
 
+# Project Timeline :
+
+December 25, 2020 - UX/UI, set of all functionalities to be incorporated are finalised
+January 25,2020   - Collecting sample datasets and training a model to be used for offline operations are done 
+February 1, 2020  - testing and deploying the tensorflow lite model in the app (offline model).
+February 8, 2020  - incorporating firebase mlkit for working in online conditions
+February 20, 2020 - finalised the setup for training the dataset in cloud and further setup to be done for the process are carried out
+March 20, 2020    - formalised a way to collect the user scanned data and train them using the cloud training process
+
 # App Screens/Flow :
 
 ![Alt text](https://github.com/Navneet7k/AgroDocRevamp/blob/master/mockups/Screenshot%202019-10-27%20at%206.42.40%20PM.png?raw=true "Title")
