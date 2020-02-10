@@ -50,4 +50,7 @@ Blog : https://www.freshbytelabs.com/
 
 Hi, I'm Navneet from Kochi,India. I love solving common problems that are out there. I also love hackathons and other coding events. The AgroDoc app is one of my projects in which i had been spending most of my time recently. I have also won 1st runners up position for AgroDoc App in RapidValue Hackathon, please see here >> https://www.rapidvaluesolutions.com/event/coders-innovate-for-the-digital-future-hackathon19/
 
-contributer 2 :
+contributer 2 : Abdul Haseeb
+Website: https://sites.google.com/view/haseebpvt
+
+I'm Haseeb from Thrissur, Kerala. I believe science and computers togather can solve many real world problems that we are facing today. It can make our lives simple and safe. I always love working in projects like these.
